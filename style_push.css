@@ -1,0 +1,326 @@
+body {
+  width: 1124px;
+  margin: auto;
+}
+  
+header {
+  border-bottom: 1px solid #6666;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+  
+
+.header-top {
+  box-shadow: 0 2px 10px #262626;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+  
+#top {
+  font-size: 2rem;
+  padding-left: 3.5rem;
+}
+  
+strong{
+  color: green;
+  margin-left: 0.7rem;
+}
+  
+[target="_blank"] button {
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 6px #252525af;
+}
+  
+button {
+  margin-right: 2.5rem;
+  border: none;
+  background: transparent;
+}
+  
+button img {
+  width: 40px;
+  height: 72px;
+}
+
+.cap {
+  min-height: 364px;
+  background-image: url(photo.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+.bar {
+  background: white;
+  border-radius: 2px;
+  width: 389px;
+  height: 204px;
+  flex-wrap: wrap;
+  margin-left: 2rem;
+  justify-content: space-around;
+}
+
+h1 {
+  width: 316px;
+}
+
+.bar>div {
+  width: 6rem;
+  height: 2rem;
+  background-color: black;
+  color: white;
+  border-radius: 2rem;
+  justify-content: space-around;
+}
+  
+nav {
+  height: 80px;
+  padding-top: 2rem;
+  box-sizing: border-box;
+}
+
+nav a {
+  color: #1d1d1d;
+  margin: 1rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 20px;
+}
+
+.snack {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.snack a, img {
+  width: fit-content;
+}
+ 
+.snack img {
+  width: 70%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+footer {
+  background: #262626;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+}
+
+footer>span {
+  font-size: 2.5rem;
+  padding-left: 3.5rem;
+}
+
+footer>span b {
+  color: white;
+}
+
+aside {
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.aside-left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 6rem;
+}
+
+.language {
+  width: fit-content;
+  padding-top: 2rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+select {
+  color: white;
+  background: rgb(44, 44, 44);
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+
+}
+
+a>div {
+  color: white;
+}
+
+.social {
+  width: 70px;
+  padding: 2rem 2rem 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.socseti {
+ display: flex;
+ align-items: center;
+}
+
+.link {
+  margin-left: 9rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section a {
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.down {
+  display: flex;
+  justify-content: center;
+}
+
+.down a {
+  margin: 0 2rem;
+}
+
+.bottom {
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.button-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 2rem;
+}
+
+.button-top {
+  background: rgb(0, 190, 0);
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 5px;
+}
+
+.button-top a {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.8rem;
+}
+
+@media ( max-width: 768px ) {
+  body {
+    width: 100%;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .content> h3, h2 {
+    margin: 0.3em;
+  }
+
+  aside {
+    padding-left: 1rem;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .aside-left {
+    margin: 0;
+  }
+
+  .link {
+    margin: 0;
+    margin-top: 2rem;
+  }
+}
+
+@media ( max-width: 576px ) {
+  body {
+    width: 100%;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .bar {
+    background: white;
+    width: 389px;
+    height: 204px;
+    margin: 0 auto 0 auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cap {
+    align-items: end;
+    margin: auto;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #top {
+    font-size: 22px;
+    float: left;
+    padding-top: 1.6rem;
+    padding-left: 1.5rem;
+  }
+  
+  button {
+    margin: 1.5rem;
+  }
+
+  .basket {
+    display: none;
+  }
+
+  footer span {
+  font-size: 24px;
+  margin: 1.5rem;
+  padding: 0%;
+}
+
+aside {
+  flex-direction: column;
+}
+
+.down a img {
+  width: 100%;
+  margin: 0;
+}
+
+.bottom {
+  flex-direction: column;
+}
+
+}
